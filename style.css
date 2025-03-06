@@ -444,3 +444,58 @@ footer {
     color: #ffffff;
     margin: 0;
 }
+
+/*====================
+  スマートフォン用のスタイル
+ =====================*/
+ @media screen and (max-width: 767px) {
+    /* PC用ナビゲーション非表示 */
+    #nav-pc {
+      display: none;
+    }
+  
+    /* ハンバーガーメニュー */
+    #menu-sp {
+      display: block;
+      background-color: transparent;
+      float: right;
+      padding: 0;
+      border: none;
+    }
+  
+    /* スマホ用ナビゲーションの表示切替*/
+    /* 初期状態、レイアウトと非表示設定 */
+    #nav-sp {
+      background-color: #2710d5;
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: none;
+      z-index: 100;
+    }
+    
+    }
+
+    #close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    #nav-sp nav ul {
+        padding-left: 0;
+    }
+
+    #nav-sp nav li {
+        list-style: none;
+    }
+
+    #logo-sp {
+        margin: 80px 0 30px 20px;
+    }
+
+
